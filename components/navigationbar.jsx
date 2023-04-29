@@ -6,20 +6,20 @@ import { useState } from 'react'
 function HamburgerMenu() {
 
     
-    function handleClick() {
-        const [isOpen, setIsOpen] = useState(0);
-        // window.alert("Hello world!");
+    // function handleClick() {
+    //     const [isOpen, setIsOpen] = useState(0);
+    //     // window.alert("Hello world!");
 
         
-        if (isOpen) {
-            return <>window.alert("Hello world!");</>
+    //     if (isOpen) {
+    //         return <>window.alert("Hello world!");</>
             
 
-        } return <>window.alert("Hello world!");</>
+    //     } return <>window.alert("Hello world!");</>
 
-        { isOpen ? <div>hello</div> : null }
+    //     { isOpen ? <div>hello</div> : null }
 
-    }
+    // }
 
 
 
@@ -27,13 +27,13 @@ function HamburgerMenu() {
     return (
         <div className="">
 
-            <nav className="" onClick={handleClick}>
+            <nav className="">
 
                 {/* mobile navigation */}
-                <ul className="md:hidden space-y-2 mx-2 w-8 overflow-hidden">
-                    <span className="block h-0.5 w-8 bg-white"></span>
-                    <span className="block h-0.5 w-8 bg-white"></span>
-                    <span className="block h-0.5 w-8 bg-white"></span>
+                <ul className="md:hidden space-y-2 mx-2 w-8 border-2 border-red-600 overflow-hidden">
+                    <span className="block h-0.5 w-8 bg-black"></span>
+                    <span className="block h-0.5 w-8 bg-black"></span>
+                    <span className="block h-0.5 w-8 bg-black"></span>
                 </ul>
 
             </nav>
@@ -45,11 +45,11 @@ function HamburgerMenu() {
 {/* normal screen navigation */}
 const NormalMenu = () => {
     return (
-        <div className="Relative bg-black">
-             <ul className="hidden md:flex justify-center space-x-10 top-0 z-10 fixed">
-                    <li className="text-orange-500">Forza Motorsport</li>
-                    <li className="text-white">Autovista</li>
-                    <li className="text-white">Login</li>
+        <div className="Relative">
+             <ul className="hidden md:flex justify-center space-x-10 top-0 z-10 fixed bg-white border-8 border-green-400 w-full">
+                    <li className="text-red-500">Forza Motorsport</li>
+                    <li className="text-red-500">Autovista</li>
+                    <li className="text-red-500">Login</li>
                 </ul>
         </div>
     )
