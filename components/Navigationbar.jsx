@@ -1,5 +1,6 @@
-import { useState } from 'react'
-
+// The imports are needed for standard React projects not using NextJS
+// import React from 'react'
+// import ReactDOM from 'react-dom'
 
 // Nobody knows it from this day on copying from ChatGPT and other sources obviously don't work.
 
@@ -31,9 +32,9 @@ function HamburgerMenu() {
 
                 {/* mobile navigation */}
                 <ul className="md:hidden space-y-2 mx-2 w-8 border-2 border-red-600 overflow-hidden">
-                    <span className="block h-0.5 w-8 bg-black"></span>
-                    <span className="block h-0.5 w-8 bg-black"></span>
-                    <span className="block h-0.5 w-8 bg-black"></span>
+                    <span className="block h-0.5 w-8 bg-black" />
+                    <span className="block h-0.5 w-8 bg-black" />
+                    <span className="block h-0.5 w-8 bg-black" />
                 </ul>
 
             </nav>
@@ -42,8 +43,9 @@ function HamburgerMenu() {
     );
 }
 
-{/* normal screen navigation */}
-const NormalMenu = () => {
+// normal screen navigation
+
+function NormalMenu() {
     return (
         <div className="Relative">
              <ul className="hidden md:flex justify-center space-x-10 top-0 z-10 fixed bg-white border-8 border-green-400 w-full">
