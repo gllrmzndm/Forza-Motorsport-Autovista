@@ -17,7 +17,7 @@ function Header() {
    const playerRef=useRef();
 
    return (
-    <div className='border-2 border-red-700 player-wrapper pointer-events-none aspect-video object-cover relative'>
+    <div className='border-2 border-red-700 player-wrapper pointer-events-none aspect-video object-cover relative h-screen md:h-full'>
       <VideoPlayer playerRef={playerRef} />
     </div>
    )

@@ -45,3 +45,6 @@ React for the interface https://react.dev/
 Prisma databse https://www.prisma.io/nextjs
 NextJS framework https://react.dev/
 Tailwind CSS https://tailwindcss.com/
+React-player https://yarnpkg.com/package/react-player
+
+### Tested Devices

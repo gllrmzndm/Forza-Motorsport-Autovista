@@ -31,7 +31,7 @@ function HamburgerMenu() {
             <nav className="">
 
                 {/* mobile navigation */}
-                <ul className="md:hidden space-y-2 mx-2 w-8 border-2 border-red-600 overflow-hidden">
+                <ul className="space-y-2 my-2 mx-2 w-8 overflow-hidden md:hidden">
                     <span className="block h-0.5 w-8 bg-black" />
                     <span className="block h-0.5 w-8 bg-black" />
                     <span className="block h-0.5 w-8 bg-black" />
