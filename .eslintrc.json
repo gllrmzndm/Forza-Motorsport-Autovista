@@ -7,7 +7,10 @@
         "plugin:react/recommended",
         "airbnb",
         "prettier",
-        "plugin:react/jsx-runtime"
+        "plugin:react/jsx-runtime",
+        "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript"
     ],
     "overrides": [
     ],
