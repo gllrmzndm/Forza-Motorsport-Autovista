@@ -40,8 +40,6 @@ export default function startEngine() {
     <div>
       <NavBar />
       <Home />
-      {/* <Main /> */}
-      {/* <Header /> */}
     </div>
   )
 }
