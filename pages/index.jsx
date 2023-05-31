@@ -1,17 +1,10 @@
 import dynamic from 'next/dynamic';
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import NavBar from '../components/Navigationbar';
 
 const VideoPlayer = dynamic(() => import("../components/VideoPlayer"), {ssr: false});
 
-function Header() {
 
-  return (
-    <header className="bg-blue-700">
-        Amamazing Forza Motorsport Autovista
-      </header>
-  )
-}
 
   function Home(){
    const playerRef=useRef();
@@ -24,15 +17,7 @@ function Header() {
   }
 
 
-function Main() {
 
-  return (
-    <main className="bg-red-700">
-        <p>Landing page text</p>
-
-      </main>
-  );
-}
 
 
 export default function startEngine() {
