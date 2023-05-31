@@ -2,8 +2,6 @@
 // import React from 'react'
 // import ReactDOM from 'react-dom'
 
-// Nobody knows it from this day on copying from ChatGPT and other sources obviously don't work.
-
 function HamburgerMenu() {
 
     
@@ -48,7 +46,7 @@ function HamburgerMenu() {
 function NormalMenu() {
     return (
         <div className="Relative">
-             <ul className="hidden md:flex justify-center space-x-10 top-0 z-10 fixed bg-white border-8 border-green-400 w-full">
+             <ul className="hidden md:flex top-0 z-10 fixed bg-gradient-to-b from-stone-500d w-full h-10 items-center justify-around border-2 border-red-500">
                     <li className="text-red-500">Forza Motorsport</li>
                     <li className="text-red-500">Autovista</li>
                     <li className="text-red-500">Login</li>
