@@ -9,8 +9,8 @@
         "prettier",
         "plugin:react/jsx-runtime",
         "plugin:import/errors",
-    "plugin:import/warnings",
-    "plugin:import/typescript"
+        "plugin:import/warnings",
+        "plugin:import/typescript"
     ],
     "overrides": [
     ],
