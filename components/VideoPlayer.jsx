@@ -16,7 +16,7 @@ function VideoPlayer({ playerRef }) {
         playing
         loop="true"
         controls
-        url='https://youtu.be/D9RUAXbAZgc'
+        url='https://youtu.be/eJzEmkpWQj0'
         width="100%"
         height="100%"
       />
