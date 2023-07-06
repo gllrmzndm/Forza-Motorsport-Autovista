@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: environment;
+    src: url("/fonts/Enviromment/Environment_Bold.ttf") format("truetype");
+    font-weight: bold;
+
+    font-family: roboto;
+    src: url("/fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+    font-weight: bold;
+  }
