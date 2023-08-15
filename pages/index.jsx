@@ -17,9 +17,15 @@ const VideoPlayer = dynamic(() => import("../components/VideoPlayer"), {ssr: fal
 
    return (
     <div className='player-wrapper pointer-events-none aspect-video object-cover relative h-screen w-full md:w-full md:h-full'>
+
       <div className='absolute md:absolute inset-0 flex items-center justify-center'>
           <p className='z-10 text-white font-roboto font-bold md:text-7xl tracking-widest'>E M O T I O N & V I S I O N</p>
       </div>
+
+      <div className='absolute md:absolute inset-0 flex items-center justify-center text-center mt-40'>
+          <p className='z-10 text-base text-slate-600 font-roboto font-bold md:text-base'>result of a collaboration between multiple complementary fields, Creative + technology.</p>
+      </div>
+      
       <VideoPlayer playerRef={playerRef} />
     </div>
    )
@@ -27,56 +33,35 @@ const VideoPlayer = dynamic(() => import("../components/VideoPlayer"), {ssr: fal
 
   function LandingPageSectionOne(){
     return (
-      <div className='relative h-full md:grid grid-flow-col grid-rows-2 col-start-auto overflow-hidden md:h-screen'>
+      <div className='relative h-full'>
+        <div className='grid grid-cols-1 md:grid md:grid-cols-2 border-8 border-solid border-blue-600 h-full'>
 
-        <div className='md:h-screen'>
-          <div className='flex justify-center'>
-          <p className='z-10 absolute text-white font-roboto font-bold text-4xl'>EMOTION & VISION</p>
-          </div>
-          <Image className='z-0' src={GreenClover} />
-          </div>
-
-        <div className='md:h-screen'>
-          <Image src={GreenFront} />
+          <div className='relative border-2 flex justify-center items-center border-green-600'>
+            <p className='absolute z-10 border-2 border-blue-500'>whatever</p>
+              <Image className='z-0' src={GreenTail} />
           </div>
 
-        <div className='md:h-screen'>
-          <Image src={GreenTail} />
+          <div className='relative border-2 flex justify-center items-center border-green-600'>
+            <p className='absolute z-10 border-2 border-blue-500'>whatever</p>
+              <Image className='z-0' src={GreenFront} />
           </div>
 
-        <div className='md:h-screen'>
-          <Image src={GreenWheel} />
+          <div className='relative border-2 flex justify-center items-center border-green-600'>
+            <p className='absolute z-10 border-2 border-blue-500'>whatever</p>
+              <Image className='z-0' src={GreenWheel} />
           </div>
+          <div className='relative border-2 flex justify-center items-center border-green-600'>
+            <p className='absolute z-10 border-2 border-blue-500'>whatever</p>
+              <Image className='z-0' src={GreenClover} />
+          </div>
+
+        </div>
 
       </div>
     )
 
   }
 
-  function LandingPageSectionOne2(){
-    return (
-      <div className='relative h-full md:grid grid-flow-col grid-rows-2 col-start-auto overflow-hidden md:h-screen'>
-
-        <div className='md:h-screen'>
-          <Image src={GreenClover} />
-          </div>
-
-        <div className='md:h-screen'>
-          <Image src={GreenFront} />
-          </div>
-
-        <div className='md:h-screen'>
-          <Image src={GreenTail} />
-          </div>
-
-        <div className='md:h-screen'>
-          <Image src={GreenWheel} />
-          </div>
-
-      </div>
-    )
-
-  }
 
 
 export default function startEngine() {
@@ -85,7 +70,6 @@ export default function startEngine() {
       <NavBar />
       <Home />
       <LandingPageSectionOne />
-      <LandingPageSectionOne2 />
     </div>
   )
 }
