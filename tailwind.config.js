@@ -14,7 +14,14 @@ module.exports = {
         Environment: "Environment",
         Robot: "Robot",
       },
+      transitionDuration: {
+        '10000': '10000ms',
+        '15000': '15000ms',
+        '20000': '20000ms',
+      }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
 }

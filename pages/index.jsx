@@ -16,17 +16,19 @@ const VideoPlayer = dynamic(() => import("../components/VideoPlayer"), {ssr: fal
    const playerRef=useRef();
 
    return (
-    <div className='player-wrapper pointer-events-none aspect-video object-cover relative h-screen w-full md:w-full md:h-full'>
+    <div className='player-wrapper pointer-events-none h-screen w-full md:w-full md:h-screen border-10 border-green-400'>
+        
 
       <div className='absolute md:absolute inset-0 flex items-center justify-center'>
-          <p className='z-10 text-white font-roboto font-bold md:text-7xl tracking-widest'>E M O T I O N & V I S I O N</p>
+        <p className='z-10 text-white font-roboto font-bold md:text-7xl tracking-widest'>E M O T I O N & V I S I O N</p>
       </div>
 
       <div className='absolute md:absolute inset-0 flex items-center justify-center text-center mt-40'>
-          <p className='z-10 text-base text-slate-600 font-roboto font-bold md:text-base'>result of a collaboration between multiple complementary fields, Creative + technology.</p>
+        <p className='z-10 text-base text-slate-600 font-roboto font-bold md:text-base'>result of a collaboration between multiple complementary fields, Creative + technology.</p>
       </div>
-      
-      <VideoPlayer playerRef={playerRef} />
+    
+        <VideoPlayer playerRef={playerRef} />
+
     </div>
    )
   }
@@ -34,25 +36,26 @@ const VideoPlayer = dynamic(() => import("../components/VideoPlayer"), {ssr: fal
   function LandingPageSectionOne(){
     return (
       <div className='relative h-full'>
-        <div className='grid grid-cols-1 md:grid md:grid-cols-2 border-8 border-solid border-blue-600 h-full'>
+        <div className='grid grid-cols-1 md:grid md:grid-cols-2 h-full overflow-hidden'>
 
-          <div className='relative border-2 flex justify-center items-center border-green-600'>
-            <p className='absolute z-10 border-2 border-blue-500'>whatever</p>
-              <Image className='z-0' src={GreenTail} />
+          <div className='relative flex justify-center items-center overflow-hidden'>
+              <p className='absolute z-10 text-white font-roboto font-bold'>UNMATCHED VISUAL FIDELITY</p>
+              <Image className='z-0 transition ease-in-out duration-10000 hover:scale-150 hover:duration-20000' src={GreenTail} />
           </div>
 
-          <div className='relative border-2 flex justify-center items-center border-green-600'>
-            <p className='absolute z-10 border-2 border-blue-500'>whatever</p>
-              <Image className='z-0' src={GreenFront} />
+          <div className='relative flex justify-center items-center overflow-hidden'>
+              <p className='absolute z-10 text-white font-roboto font-bold'>SEE YOU AT THE STARTING LINE</p>
+              <Image className='z-0 transition ease-in-out duration-10000 hover:scale-150 hover:duration-20000' src={GreenFront} />
           </div>
 
-          <div className='relative border-2 flex justify-center items-center border-green-600'>
-            <p className='absolute z-10 border-2 border-blue-500'>whatever</p>
-              <Image className='z-0' src={GreenWheel} />
+          <div className='relative flex justify-center items-center overflow-hidden'>
+              <p className='absolute z-10 text-white font-roboto font-bold'>ALWAYS EVOLVING</p>
+              <Image className='z-0 transition ease-in-out duration-10000 hover:scale-150 hover:duration-20000' src={GreenWheel} />
           </div>
-          <div className='relative border-2 flex justify-center items-center border-green-600'>
-            <p className='absolute z-10 border-2 border-blue-500'>whatever</p>
-              <Image className='z-0' src={GreenClover} />
+
+          <div className='relative flex justify-center items-center overflow-hidden'>
+              <p className='absolute z-10 text-white font-roboto font-bold'>WE CAN DO THIS ALL DAY</p>
+              <Image className='z-0 transition ease-in-out duration-10000 hover:scale-150 hover:duration-20000' src={GreenClover} />
           </div>
 
         </div>
@@ -61,7 +64,6 @@ const VideoPlayer = dynamic(() => import("../components/VideoPlayer"), {ssr: fal
     )
 
   }
-
 
 
 export default function startEngine() {

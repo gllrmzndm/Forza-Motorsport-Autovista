@@ -51,7 +51,8 @@ function NormalMenu() {
         <div className="Relative">
              <ul className="hidden md:flex top-0 z-10 fixed bg-gradient-to-b from-stone-500d w-full h-10 items-center justify-around overflow-hidden">
                     <li className="text-white">Forza Motorsport</li>
-                    <Image className="" src={forzaLogo} />
+                    {/* <Image className="" src={forzaLogo} /> */}
+                    <li className="text-white">AUTOVISTA</li>
                     <li className="text-white">Login</li>
                 </ul>
         </div>
