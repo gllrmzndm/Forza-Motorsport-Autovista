@@ -28,7 +28,6 @@ const VideoPlayer = dynamic(() => import("../components/VideoPlayer"), {ssr: fal
 
       <div className='grid grid-cols-1 overflow-hidden h-full md:screen md:max-h-full aspect-[21/9]'>
         <VideoPlayer playerRef={playerRef} />
-        {/* <Image className='z-0' src={GreenClover} /> */}
       </div>
 
     </div>
