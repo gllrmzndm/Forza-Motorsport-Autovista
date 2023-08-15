@@ -16,9 +16,8 @@ const VideoPlayer = dynamic(() => import("../components/VideoPlayer"), {ssr: fal
    const playerRef=useRef();
 
    return (
-    <div className='player-wrapper pointer-events-none h-screen w-full md:w-full md:h-screen border-10 border-green-400'>
-        
-
+    <div className='player-wrapper pointer-events-none relative overflow-hidden h-screen w-full md:h-screen md:w-full grid grid-cols-1'>
+      
       <div className='absolute md:absolute inset-0 flex items-center justify-center'>
         <p className='z-10 text-white font-roboto font-bold md:text-7xl tracking-widest'>E M O T I O N & V I S I O N</p>
       </div>
@@ -26,8 +25,11 @@ const VideoPlayer = dynamic(() => import("../components/VideoPlayer"), {ssr: fal
       <div className='absolute md:absolute inset-0 flex items-center justify-center text-center mt-40'>
         <p className='z-10 text-base text-slate-600 font-roboto font-bold md:text-base'>result of a collaboration between multiple complementary fields, Creative + technology.</p>
       </div>
-    
+
+      <div className='grid grid-cols-1 overflow-hidden h-full md:screen md:max-h-full aspect-[21/9]'>
         <VideoPlayer playerRef={playerRef} />
+        {/* <Image className='z-0' src={GreenClover} /> */}
+      </div>
 
     </div>
    )
