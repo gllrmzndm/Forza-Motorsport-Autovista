@@ -8,16 +8,16 @@ import GreenTail from '../assets/IndexPageSectionOne/Giulia_Green_Taillights.jpe
 import GreenWheel from '../assets/IndexPageSectionOne/Giulia_Green_Wheel.jpeg'
 import NavBar from '../components/Navigationbar';
 
-const VideoPlayer = dynamic(() => import("../components/VideoPlayer"), {ssr: false});
+const VideoPlayer = dynamic(() => import("../components/VideoPlayer"), { ssr: false });
 
 
 
-  function Home(){
-   const playerRef=useRef();
+function Home() {
+  const playerRef = useRef();
 
-   return (
+  return (
     <div className='player-wrapper pointer-events-none relative overflow-hidden h-screen w-full md:h-screen md:w-full grid grid-cols-1'>
-      
+
       <div className='absolute md:absolute inset-0 flex items-center justify-center'>
         <p className='z-10 text-white font-roboto font-bold md:text-7xl tracking-widest'>E M O T I O N & V I S I O N</p>
       </div>
@@ -31,40 +31,40 @@ const VideoPlayer = dynamic(() => import("../components/VideoPlayer"), {ssr: fal
       </div>
 
     </div>
-   )
-  }
+  )
+}
 
-  function LandingPageSectionOne(){
-    return (
-      <div className='relative h-full'>
-        <div className='grid grid-cols-1 md:grid md:grid-cols-2 h-full overflow-hidden'>
+function LandingPageSectionOne() {
+  return (
+    <div className='relative h-full'>
+      <div className='grid grid-cols-1 md:grid md:grid-cols-2 h-full overflow-hidden'>
 
-          <div className='relative flex justify-center items-center overflow-hidden'>
-              <p className='absolute z-10 text-white font-roboto font-bold'>UNMATCHED VISUAL FIDELITY</p>
-              <Image className='z-0 transition ease-in-out duration-10000 hover:scale-150 hover:duration-20000' src={GreenTail} />
-          </div>
+        <div className='relative flex justify-center items-center overflow-hidden'>
+          <p className='absolute z-10 text-white font-roboto font-bold'>UNMATCHED VISUAL FIDELITY</p>
+          <Image className='z-0 transition ease-in-out duration-10000 hover:scale-150 hover:duration-20000' src={GreenTail} />
+        </div>
 
-          <div className='relative flex justify-center items-center overflow-hidden'>
-              <p className='absolute z-10 text-white font-roboto font-bold'>SEE YOU AT THE STARTING LINE</p>
-              <Image className='z-0 transition ease-in-out duration-10000 hover:scale-150 hover:duration-20000' src={GreenFront} />
-          </div>
+        <div className='relative flex justify-center items-center overflow-hidden'>
+          <p className='absolute z-10 text-white font-roboto font-bold'>SEE YOU AT THE STARTING LINE</p>
+          <Image className='z-0 transition ease-in-out duration-10000 hover:scale-150 hover:duration-20000' src={GreenFront} />
+        </div>
 
-          <div className='relative flex justify-center items-center overflow-hidden'>
-              <p className='absolute z-10 text-white font-roboto font-bold'>ALWAYS EVOLVING</p>
-              <Image className='z-0 transition ease-in-out duration-10000 hover:scale-150 hover:duration-20000' src={GreenWheel} />
-          </div>
+        <div className='relative flex justify-center items-center overflow-hidden'>
+          <p className='absolute z-10 text-white font-roboto font-bold'>ALWAYS EVOLVING</p>
+          <Image className='z-0 transition ease-in-out duration-10000 hover:scale-150 hover:duration-20000' src={GreenWheel} />
+        </div>
 
-          <div className='relative flex justify-center items-center overflow-hidden'>
-              <p className='absolute z-10 text-white font-roboto font-bold'>WE CAN DO THIS ALL DAY</p>
-              <Image className='z-0 transition ease-in-out duration-10000 hover:scale-150 hover:duration-20000' src={GreenClover} />
-          </div>
-
+        <div className='relative flex justify-center items-center overflow-hidden'>
+          <p className='absolute z-10 text-white font-roboto font-bold'>WE CAN DO THIS ALL DAY</p>
+          <Image className='z-0 transition ease-in-out duration-10000 hover:scale-150 hover:duration-20000' src={GreenClover} />
         </div>
 
       </div>
-    )
 
-  }
+    </div>
+  )
+
+}
 
 
 export default function startEngine() {
