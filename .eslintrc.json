@@ -3,7 +3,7 @@
         "browser": true,
         "es2021": true
     },
-    "extends": "eslint:recommended", "next":{},
+    "extends": ["next", "prettier"],
     "parserOptions": {"ecmaVersion": "latest"},"rules": {}
     }
 
