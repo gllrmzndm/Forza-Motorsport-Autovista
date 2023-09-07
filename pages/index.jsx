@@ -7,6 +7,7 @@ import GreenFront from '../assets/IndexPageSectionOne/Giulia_Green_Front.jpeg';
 import GreenTail from '../assets/IndexPageSectionOne/Giulia_Green_Taillights.jpeg';
 import GreenWheel from '../assets/IndexPageSectionOne/Giulia_Green_Wheel.jpeg';
 import NavBar from '../components/Navigationbar';
+import Footerbar from '@/components/Footerbar';
 
 const VideoPlayer = dynamic(() => import('../components/VideoPlayer'), {
   ssr: false,
@@ -71,7 +72,7 @@ function LandingPageSectionOne() {
           />
         </div>
 
-        <div className='flex items-center justify-center overflow-hidden relative '>
+        <div className='relative flex items-center justify-center overflow-hidden '>
           <p className='font-roboto absolute z-10 font-bold text-white'>
             WE CAN DO THIS ALL DAY
           </p>
@@ -91,6 +92,7 @@ export default function startEngine() {
       <NavBar />
       <Home />
       <LandingPageSectionOne />
+      <Footerbar />
     </div>
   );
 }

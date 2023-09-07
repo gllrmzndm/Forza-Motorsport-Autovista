@@ -52,3 +52,11 @@ Tailwind CSS https://tailwindcss.com/
 React-player https://yarnpkg.com/package/react-player
 
 ### Tested Devices
+
+### Notes
+
+- JSXReact
+- Tailwind CSS
+- Prettier
+- Tailwind formatter
+- Prettier linting
