@@ -20,8 +20,8 @@ function HamburgerMenu() {
     /* mobile navigation */
   }
   return (
-    <div className=' bg-white dark:bg-slate-800'>
-      <nav className='border-grey-600 border-2 dark:border-slate-800'>
+    <div className=' bg-white dark:bg-gray-950'>
+      <nav className='border-2 border-gray-950 dark:bg-gray-950'>
         <ul className='my-2 w-8 space-y-2 overflow-hidden md:hidden'>
           <span className='block h-0.5 w-8 bg-black dark:bg-white' />
           <span className='block h-0.5 w-8 bg-black dark:bg-white' />
