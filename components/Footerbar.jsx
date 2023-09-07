@@ -11,13 +11,11 @@ export default function Footerbar() {
       </div>
       <div>
         <div className='grid w-screen grid-cols-3 justify-self-end text-center'>
-          <p className='border-1 border-red-500 bg-red-500 text-red-500 text-opacity-0'>
+          <p className='border-1 border-l-2 border-r-2 border-gray-600 border-opacity-50 bg-red-500 text-red-500 text-opacity-0'>
             ITA
           </p>
-          <p className='border-1 border-white bg-white text-white text-opacity-0'>
-            ITA
-          </p>
-          <p className='border-1 border-green-500 bg-green-500 text-green-500 text-opacity-0'>
+          <p className='bg-white text-white text-opacity-0'>ITA</p>
+          <p className='border-1 border-l-2 border-r-2 border-gray-600 border-opacity-50 bg-green-500 text-green-500 text-opacity-0'>
             ITA
           </p>
         </div>
