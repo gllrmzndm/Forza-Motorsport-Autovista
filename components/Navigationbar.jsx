@@ -31,7 +31,7 @@ function HamburgerMenu() {
           <div className='my-1 h-0.5 w-6 bg-black dark:bg-white'></div>
           <div className='my-1 h-0.5 w-6 bg-black dark:bg-white'></div>
         </div>
-        <div className='text-2xl font-bold text-white'>Logo</div>
+        {/* <div className='text-2xl font-bold text-white'>Logo</div> */}
       </nav>
 
       <div className='relative hidden h-20 items-center justify-center font-bold md:flex'>
