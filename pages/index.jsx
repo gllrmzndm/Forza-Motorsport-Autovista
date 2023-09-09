@@ -25,7 +25,7 @@ function Home() {
       </div>
 
       <div className='absolute inset-0 mt-40 flex items-center justify-center text-center md:absolute'>
-        <p className='z-10 text-base font-bold text-slate-600 md:text-base'>
+        <p className='z-10 mx-10 text-base font-bold text-slate-600 md:text-base'>
           result of a collaboration between multiple complementary fields,
           Creative + technology.
         </p>

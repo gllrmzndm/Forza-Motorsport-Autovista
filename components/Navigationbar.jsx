@@ -12,10 +12,10 @@ function HamburgerMenu() {
   // Menu is er op md niet aanwezig.
 
   return (
-    <div className='bg-white dark:bg-gray-950'>
-      <nav className='flex items-center justify-between bg-gray-900 p-4 md:hidden'>
+    <div className='z-10 bg-white dark:bg-gray-950'>
+      <nav className='z-1 relative flex w-screen items-center justify-between bg-white p-4 dark:bg-gray-950 md:hidden'>
         <div className={`menu ${menuOpen ? 'block' : 'hidden'}`}>
-          <ul className='space-y-4 text-lg text-white'>
+          <ul className='fixed left-0 right-0 top-14 z-20 flex h-screen w-screen flex-col items-center justify-center gap-10 bg-white text-lg text-black dark:bg-gray-950 dark:text-white'>
             <li className='text-white'>Forza Motorsport</li>
             <li className='text-white'>AUTOVISTA</li>
             <li className='text-white'>Login</li>
@@ -23,13 +23,13 @@ function HamburgerMenu() {
         </div>
         <div
           className={`hamburger cursor-pointer p-2 ${
-            menuOpen ? 'bg-gray-700' : 'bg-red-900'
+            menuOpen ? 'absolute' : ''
           }`}
           onClick={toggleMenu}
         >
-          <div className='my-1 h-0.5 w-6 bg-white'></div>
-          <div className='my-1 h-0.5 w-6 bg-white'></div>
-          <div className='my-1 h-0.5 w-6 bg-white'></div>
+          <div className='my-1 h-0.5 w-6 bg-black dark:bg-white'></div>
+          <div className='my-1 h-0.5 w-6 bg-black dark:bg-white'></div>
+          <div className='my-1 h-0.5 w-6 bg-black dark:bg-white'></div>
         </div>
         <div className='text-2xl font-bold text-white'>Logo</div>
       </nav>
