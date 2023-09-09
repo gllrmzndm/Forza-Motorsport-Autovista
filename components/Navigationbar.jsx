@@ -15,10 +15,10 @@ function HamburgerMenu() {
     <div className='z-10 bg-white dark:bg-gray-950'>
       <nav className='z-1 relative flex w-screen items-center justify-between bg-white p-4 dark:bg-gray-950 md:hidden'>
         <div className={`menu ${menuOpen ? 'block' : 'hidden'}`}>
-          <ul className='text-blackdark:bg-gray-950 fixed left-0 right-0 top-14 z-20 flex h-screen w-screen flex-col items-center justify-center gap-10 bg-white text-center text-lg font-bold dark:text-white'>
+          <ul className='fixed left-0 right-0 top-14 z-20 flex h-screen w-screen flex-col items-center justify-center gap-10 bg-white text-center text-lg font-bold text-black dark:bg-gray-950 dark:text-white'>
             <li className='w-screen'>Forza Motorsport</li>
-            <li className=''>AUTOVISTA</li>
-            <li className=''>Login</li>
+            <li className='w-screen'>AUTOVISTA</li>
+            <li className='w-screen'>Login</li>
           </ul>
         </div>
         <div
