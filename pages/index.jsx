@@ -19,13 +19,13 @@ function Home() {
   return (
     <div className='player-wrapper pointer-events-none relative grid h-screen w-full grid-cols-1 overflow-hidden md:h-screen md:w-full'>
       <div className='absolute inset-0 flex items-center justify-center md:absolute'>
-        <p className='font-roboto z-10 font-bold tracking-widest text-white md:text-7xl'>
+        <p className='z-10 font-bold tracking-widest text-white md:text-7xl'>
           E M O T I O N & V I S I O N
         </p>
       </div>
 
       <div className='absolute inset-0 mt-40 flex items-center justify-center text-center md:absolute'>
-        <p className='font-roboto z-10 text-base font-bold text-slate-600 md:text-base'>
+        <p className='z-10 text-base font-bold text-slate-600 md:text-base'>
           result of a collaboration between multiple complementary fields,
           Creative + technology.
         </p>
@@ -43,7 +43,7 @@ function LandingPageSectionOne() {
     <div className='relative h-full'>
       <div className='grid h-full grid-cols-1 overflow-hidden md:grid md:grid-cols-2'>
         <div className='relative flex items-center justify-center overflow-hidden'>
-          <p className='font-roboto absolute z-10 font-bold text-white'>
+          <p className='absolute z-10 font-bold text-white'>
             UNMATCHED VISUAL FIDELITY
           </p>
           <Image
@@ -53,7 +53,7 @@ function LandingPageSectionOne() {
         </div>
 
         <div className='relative flex items-center justify-center overflow-hidden'>
-          <p className='font-roboto absolute z-10 font-bold text-white'>
+          <p className='absolute z-10 font-bold text-white'>
             SEE YOU AT THE STARTING LINE
           </p>
           <Image
@@ -63,9 +63,7 @@ function LandingPageSectionOne() {
         </div>
 
         <div className='relative flex items-center justify-center overflow-hidden'>
-          <p className='font-roboto absolute z-10 font-bold text-white'>
-            ALWAYS EVOLVING
-          </p>
+          <p className='absolute z-10 font-bold text-white'>ALWAYS EVOLVING</p>
           <Image
             className='z-0 transition duration-10000 ease-in-out hover:scale-150 hover:duration-20000'
             src={GreenWheel}
@@ -73,7 +71,7 @@ function LandingPageSectionOne() {
         </div>
 
         <div className='relative flex items-center justify-center overflow-hidden '>
-          <p className='font-roboto absolute z-10 font-bold text-white'>
+          <p className='absolute z-10 font-bold text-white'>
             WE CAN DO THIS ALL DAY
           </p>
           <Image

@@ -12,7 +12,7 @@ module.exports = {
     extend: {
       fontFamily: {
         Environment: "Environment",
-        Robot: "Robot",
+        Roboto: "Roboto",
       },
       transitionDuration: {
         '10000': '10000ms',
