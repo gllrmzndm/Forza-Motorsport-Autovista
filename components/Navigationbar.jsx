@@ -12,17 +12,17 @@ function HamburgerMenu() {
   // Menu is er op md niet aanwezig.
 
   return (
-    <div className='z-10 bg-white dark:bg-gray-950'>
+    <div className='z-10  bg-white dark:bg-gray-950'>
       <nav className='z-1 relative flex w-screen items-center justify-between bg-white p-4 dark:bg-gray-950 md:hidden'>
-        <div className={`menu ${menuOpen ? 'block' : 'hidden'}`}>
-          <ul className='fixed left-0 right-0 top-14 z-20 flex h-screen w-screen flex-col items-center justify-center gap-10 bg-white text-center text-lg font-bold text-black dark:bg-gray-950 dark:text-white'>
-            <li className='w-screen'>Forza Motorsport</li>
+        <div className={`menu ${menuOpen ? 'block h-6' : 'hidden'}`}>
+          <ul className='fixed left-0 right-0 top-14 z-20 -mt-4 flex h-screen w-screen flex-col items-center justify-center gap-10  bg-white text-center text-lg font-bold text-black dark:bg-gray-950 dark:text-white'>
+            <li className='w-screen'>Forza Motorsportss</li>
             <li className='w-screen'>AUTOVISTA</li>
             <li className='w-screen'>Login</li>
           </ul>
         </div>
         <div
-          className={`hamburger cursor-pointer p-2 ${
+          className={`hamburger my-4 cursor-pointer ${
             menuOpen ? 'absolute' : ''
           }`}
           onClick={toggleMenu}
@@ -34,6 +34,7 @@ function HamburgerMenu() {
         {/* <div className='text-2xl font-bold text-white'>Logo</div> */}
       </nav>
 
+      {/* Desktop menu */}
       <div className='relative hidden h-20 items-center justify-center font-bold md:flex'>
         <nav className='relative hidden md:block'>
           <ul className='grid grid-cols-3 justify-center gap-60 text-center text-lg text-black dark:bg-gray-950 dark:text-white'>
