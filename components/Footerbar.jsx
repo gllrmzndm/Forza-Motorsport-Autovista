@@ -1,7 +1,7 @@
 export default function Footerbar() {
   return (
     <div>
-      <div className='min-h-48 flex h-32 flex-col items-center justify-center bg-white text-center text-black dark:bg-gray-950 dark:text-white'>
+      <div className='min-h-48 flex h-32 flex-col items-center justify-center bg-gray-300 text-center text-black opacity-70 dark:bg-gray-950 dark:text-white'>
         <div className='font-bold md:grid md:grid-cols-4 md:gap-32'>
           <p>Contact</p>
           <p>Models</p>

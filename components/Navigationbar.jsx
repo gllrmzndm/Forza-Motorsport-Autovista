@@ -12,10 +12,10 @@ function HamburgerMenu() {
   // Menu is er op md niet aanwezig.
   // mobile menu
   return (
-    <div className='z-10  bg-white dark:bg-gray-950'>
+    <div className='fixed z-50 w-screen bg-gray-300 opacity-70 dark:bg-gray-950'>
       <nav className='z-1 relative flex w-screen items-center justify-between bg-white p-4 dark:bg-gray-950 md:hidden'>
         <div className={`menu ${menuOpen ? 'block h-6' : 'hidden'}`}>
-          <ul className='absolute left-0 right-0 top-14 z-20 -mt-4 flex h-screen w-screen flex-col items-center justify-center gap-10 overscroll-contain  bg-white text-center text-lg font-bold text-black dark:bg-gray-950 dark:text-white'>
+          <ul className='absolute left-0 right-0 top-14 z-20 -mt-4 flex h-screen w-screen flex-col items-center justify-center gap-10 overscroll-contain  bg-white text-center text-lg font-bold text-black opacity-100 dark:bg-gray-950 dark:text-white dark:opacity-100'>
             <li className='w-screen'>Forza Motorsportss</li>
             <li className='w-screen'>AUTOVISTA</li>
             <li className='w-screen'>Login</li>
