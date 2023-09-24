@@ -11,7 +11,7 @@ export default function Footerbar() {
       </div>
 
       <div>
-        <div className='grid w-screen grid-cols-3 justify-self-end text-center'>
+        <div className='grid w-full grid-cols-3 justify-self-end text-center'>
           <p className='border-1 border-l-2 border-r-2 border-gray-600 border-opacity-50 bg-green-500 text-green-500 text-opacity-0'>
             ITA
           </p>
