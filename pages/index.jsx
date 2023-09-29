@@ -1,6 +1,8 @@
 import dynamic from 'next/dynamic';
 import { useRef } from 'react';
 import Image from 'next/image';
+import { Analytics } from '@vercel/analytics/react';
+import Link from 'next/link';
 
 import GreenClover from '../assets/IndexPageSectionOne/Giulia_Green_Clover.jpeg';
 import GreenFront from '../assets/IndexPageSectionOne/Giulia_Green_Front.jpeg';
@@ -22,6 +24,7 @@ function Home() {
         <p className='z-10 font-bold tracking-widest text-white md:text-7xl'>
           E M O T I O N & V I S I O N
         </p>
+        <Analytics />
       </div>
 
       <div className='absolute inset-0 mt-40 flex items-center justify-center text-center md:absolute'>

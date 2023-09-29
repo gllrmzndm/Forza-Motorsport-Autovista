@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Footerbar from '@/components/Footerbar';
+import Link from 'next/link';
 
 function HamburgerMenu() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -17,7 +18,9 @@ function HamburgerMenu() {
         <div className={`menu ${menuOpen ? 'block h-6' : 'hidden'}`}>
           <ul className='absolute left-0 right-0 top-14 z-20 -mt-4 flex h-screen w-screen flex-col items-center justify-center gap-10 overscroll-contain  bg-white text-center text-lg font-bold text-black opacity-100 dark:bg-gray-950 dark:text-white'>
             <li className='w-screen'>Forza Motorsports</li>
-            <li className='w-screen'>AUTOVISTA</li>
+            <li className='w-screen'>
+              <Link href='/CarList'>Autovista</Link>
+            </li>
             <li className='w-screen'>Login</li>
           </ul>
         </div>
@@ -39,7 +42,9 @@ function HamburgerMenu() {
         <nav className='relative hidden md:block'>
           <ul className='grid grid-cols-3 justify-center gap-60 text-center text-lg text-black dark:bg-gray-950 dark:text-white'>
             <li className=''>Forza Motorsport</li>
-            <li className=''>AUTOVISTA</li>
+            <li className=''>
+              <Link href='/CarList'>AUTOVISTA</Link>
+            </li>
             <li className=''>Login</li>
           </ul>
         </nav>
