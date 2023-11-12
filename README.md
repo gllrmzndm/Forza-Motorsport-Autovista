@@ -1,6 +1,28 @@
 # Guillermo's Forza Motorsport Autovista project
 
+
+
 ## Project story
+
+**CHANGES**
+
+All about cars, using:
+
+- Vercel
+- NextJS
+- Tailwind
+- Prettier
+- React
+- Prisma (ORM)
+- SQLite as Database
+
+**Notes**
+
+- Backend needs to be fixed at vercel for the time being.
+- DaisyUI Navbar needs to be added later on.
+- Folder structure without the "app" folder.
+
+---
 
 In the first few tutorial articles we will define a simple browse-only library that library members can use to find out what books are available. This allows us to explore the operations that are common to almost every website: reading and displaying content from a database.
 
@@ -12,31 +34,26 @@ As we progress, the library example naturally extends to demonstrate more advanc
 ### Folder structure
 
 ```
-root
-|
-+-- assets            # assets folder can contain all the static files such as images, fonts, etc.
-|
-+-- components        # shared components used across the entire application
-|
-+-- config            # all the global configuration, env variables etc. get exported from here and used in the app
-|
-+-- features          # feature based modules
-|
-+-- hooks             # shared hooks used across the entire application
-|
-+-- lib               # re-exporting different libraries preconfigured for the application
-|
-+-- providers         # all of the application providers
-|
-+-- routes            # routes configuration
-|
-+-- stores            # global state stores
-|
-+-- test              # test utilities and mock server
-|
-+-- types             # base types used across the application
-|
-+-- utils             # shared utility functions
+.
+├── assets
+├── components
+├── fonts
+├── global.css
+├── jsconfig.json
+├── next.config.js
+├── node_modules
+├── package.json
+├── package-lock.json
+├── pages
+├── postcss.config.js
+├── prettier.config.js
+├── prisma
+├── public
+├── README.md
+├── script.ts
+├── styles
+├── tailwind.config.js
+└── tree.txt
 ```
 
 ### Libraries being used

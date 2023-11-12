@@ -1,0 +1,22 @@
+.
+├── assets
+├── components
+├── fonts
+├── global.css
+├── jsconfig.json
+├── next.config.js
+├── node_modules
+├── package.json
+├── package-lock.json
+├── pages
+├── postcss.config.js
+├── prettier.config.js
+├── prisma
+├── public
+├── README.md
+├── script.ts
+├── styles
+├── tailwind.config.js
+└── tree.txt
+
+9 directories, 11 files

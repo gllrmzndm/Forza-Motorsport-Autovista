@@ -41,11 +41,15 @@ function HamburgerMenu() {
       <div className='relative hidden h-20 items-center justify-center font-bold md:flex'>
         <nav className='relative hidden md:block'>
           <ul className='grid grid-cols-3 justify-center gap-60 text-center text-lg text-black dark:bg-gray-950 dark:text-white'>
-            <li className=''>Forza Motorsport</li>
-            <li className=''>
+            <li className='hover:text-green-600'>
+              <Link href='/Carlist'>Forza Motorsport</Link>
+            </li>
+            <li className='hover:text-white'>
               <Link href='/CarList'>AUTOVISTA</Link>
             </li>
-            <li className=''>Login</li>
+            <li className='hover:text-red-700'>
+              <Link href='/Carlist'>Login</Link>
+            </li>
           </ul>
         </nav>
       </div>
