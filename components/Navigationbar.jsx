@@ -19,7 +19,7 @@ function HamburgerMenu() {
           <ul className='absolute left-0 right-0 top-14 z-20 -mt-4 flex h-screen w-screen flex-col items-center justify-center gap-10 overscroll-contain  bg-white text-center text-lg font-bold text-black opacity-100 dark:bg-gray-950 dark:text-white'>
             <li className='w-screen'>Forza Motorsports</li>
             <li className='w-screen'>
-              <Link href='/CarList'>Autovista</Link>
+              <Link href='/CarList.jsx'>Autovista</Link>
             </li>
             <li className='w-screen'>Login</li>
           </ul>
@@ -45,7 +45,7 @@ function HamburgerMenu() {
               <Link href='/Carlist'>Forza Motorsport</Link>
             </li>
             <li className='hover:text-white'>
-              <Link href='/CarList'>AUTOVISTA</Link>
+              <Link href='/pages/posts/CarList.jsx'>AUTOVISTA</Link>
             </li>
             <li className='hover:text-red-700'>
               <Link href='/Carlist'>Login</Link>
